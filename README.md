@@ -1,59 +1,24 @@
-# DomainLens
+# 🌐 DomainLens
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.11.
+Address [domainlens.gennarodifiandra.it](https://domainlens.gennarodifiandra.it/)
 
-## Development server
+This Angular application allows users to perform a WHOIS analysis to obtain detailed information about a domain.
 
-To start a local development server, run:
+### 🧾 Features
 
-```bash
-ng serve
-```
+Users can fill out a form with the following field:
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+* 🌐 **Domain Name** – Which domain do you want to analyze?
 
-## Code scaffolding
+Once the domain is entered, the application makes a background call to retrieve WHOIS data and displays it on screen in a clear and readable format, including (if available):
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+* The domain name
+* Registration date
+* Expiration date
+* Last update
+* Domain status
+* Name servers
+* Administrative contacts
+* Contact email
 
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+This tool is useful for quickly obtaining essential registration information for any domain.
