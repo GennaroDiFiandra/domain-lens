@@ -15,8 +15,7 @@ const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 
 const ip2locationConfig = {
-  endpoint: '/ip2whois/v2',
-  apiKey: 'IP2L_API_KEY_PLACEHOLDER',
+  endpoint: 'https://ip-2-location.gennarodifiandra.workers.dev/',
 };
 
 export const environment = {

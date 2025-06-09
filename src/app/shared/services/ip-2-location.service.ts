@@ -13,9 +13,15 @@ export class Ip2LocationService {
   whoIsError = signal<string | null>(null);
 
   getDomainDetails(domain: string) {
+    const requestParams: { [key: string]: string } = { domain: domain };
+
+    if (!environment.production) {
+      requestParams['key'] = environment.ip2locationConfig.apiKey;
+    }
+
     return this.http
       .get<Ip2WhoIsResponse>(environment.ip2locationConfig.endpoint, {
-        params: { key: environment.ip2locationConfig.apiKey, domain: domain },
+        params: requestParams,
       })
       .pipe(
         tap({
