@@ -4,7 +4,7 @@ Address [domainlens.gennarodifiandra.it](https://domainlens.gennarodifiandra.it/
 
 This Angular application allows users to perform a WHOIS analysis to obtain detailed information about a domain.
 
-### 🧾 Features
+## 🧾 Features
 
 Users can fill out a form with the following field:
 
