@@ -1,6 +1,5 @@
 import fs from 'fs';
 import path from 'path';
-import { Ip2locationConfig } from '../src/environments/environment.model';
 
 const envFileContent = `
 import { initializeApp } from 'firebase/app';
