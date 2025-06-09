@@ -16,6 +16,7 @@ const analytics = getAnalytics(app);
 
 const ip2locationConfig = {
   endpoint: 'https://ip-2-location.gennarodifiandra.workers.dev/',
+  apiKey: '',
 };
 
 export const environment = {
