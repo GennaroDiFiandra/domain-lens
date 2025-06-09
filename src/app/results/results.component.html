@@ -1,0 +1,37 @@
+@if (whoIsError()) {
+<div class="error">{{ whoIsError() }}</div>
+}
+
+<!--  -->
+
+@if (domainDetails()) {
+<div class="grid grid-cols-2 gap-4">
+  <span class="font-bold">Domain</span>
+  <span>{{ domainDetails()?.domain }}</span>
+
+  <span class="font-bold">Status</span>
+  <span>{{ domainDetails()?.status }}</span>
+
+  <span class="font-bold">Created at</span>
+  <span>{{ domainDetails()?.create_date | date }}</span>
+
+  <span class="font-bold">Updated at</span>
+  <span>{{ domainDetails()?.update_date | date }}</span>
+
+  <span class="font-bold">Expire at</span>
+  <span>{{ domainDetails()?.expire_date | date }}</span>
+
+  <span class="font-bold">Registrar</span>
+  <span>{{ domainDetails()?.registrar?.name }}</span>
+
+  <span class="font-bold">Registrant</span>
+  <span>{{ domainDetails()?.registrant?.organization || domainDetails()?.registrant?.name }}</span>
+
+  <span class="font-bold">Nameservers</span>
+  <span>
+    @for (nameserver of domainDetails()!.nameservers; track nameserver) {
+    {{ nameserver }}<br />
+    }
+  </span>
+</div>
+}
