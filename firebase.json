@@ -1,6 +1,7 @@
 {
   "hosting": {
     "public": "dist/domain-lens/browser",
+    "site": "angular-apps-87b70-5ca37",
     "ignore": [
       "firebase.json",
       "**/.*",
