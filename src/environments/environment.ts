@@ -1,5 +1,6 @@
 import { initializeApp } from 'firebase/app';
 import { getAnalytics } from 'firebase/analytics';
+import { Ip2locationConfig } from './environment.model';
 
 const firebaseConfig = {
   apiKey: 'FIREBASE_API_KEY_PLACEHOLDER',
@@ -14,7 +15,7 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 
-const ip2locationConfig = {
+const ip2locationConfig: Ip2locationConfig = {
   endpoint: 'https://ip-2-location.gennarodifiandra.workers.dev/',
   apiKey: '',
 };
