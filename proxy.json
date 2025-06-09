@@ -1,0 +1,10 @@
+{
+  "/ip2whois": {
+    "target": "https://api.ip2whois.com",
+    "secure": true,
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/ip2whois": ""
+    }
+  }
+}

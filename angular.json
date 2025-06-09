@@ -68,7 +68,8 @@
               "buildTarget": "domain-lens:build:production"
             },
             "development": {
-              "buildTarget": "domain-lens:build:development"
+              "buildTarget": "domain-lens:build:development",
+              "proxyConfig": "proxy.json"
             }
           },
           "defaultConfiguration": "development"
