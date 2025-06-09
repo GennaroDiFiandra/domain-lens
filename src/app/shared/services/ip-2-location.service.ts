@@ -15,7 +15,7 @@ export class Ip2LocationService {
   getDomainDetails(domain: string) {
     const requestParams: { [key: string]: string } = { domain: domain };
 
-    if (!environment.production) {
+    if (!environment.production && environment.ip2locationConfig.apiKey) {
       requestParams['key'] = environment.ip2locationConfig.apiKey;
     }
 
