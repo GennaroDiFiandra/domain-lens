@@ -1,0 +1,27 @@
+<form [formGroup]="researcherForm" (ngSubmit)="onSubmit()">
+  <div class="flex justify-start items-end gap-4">
+    <div class="flex flex-col">
+      <label for="domain"
+        >Your domain<br />
+        <span class="text-sm italic"
+          >Insert your domain without protocol. For example <b>google.com</b></span
+        >
+      </label>
+      <input
+        class="p-2 text-xs"
+        id="domain"
+        type="text"
+        inputmode="text"
+        formControlName="domain"
+      />
+    </div>
+
+    <div>
+      <button type="submit" class="px-8 py-1">Scan</button>
+    </div>
+  </div>
+
+  @if (researcherForm.get("domain")?.invalid && researcherForm.get("domain")?.dirty) {
+  <div class="text-sm italic">Please enter the domain you wish to analyze</div>
+  }
+</form>
