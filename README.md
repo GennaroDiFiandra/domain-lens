@@ -13,12 +13,12 @@ Users can fill out a form with the following field:
 Once the domain is entered, the application makes a background call to retrieve WHOIS data and displays it on screen in a clear and readable format, including (if available):
 
 * The domain name
+* Domain status
 * Registration date
 * Expiration date
 * Last update
-* Domain status
+* Registrar name
+* Registrant company or name
 * Name servers
-* Administrative contacts
-* Contact email
 
 This tool is useful for quickly obtaining essential registration information for any domain.
